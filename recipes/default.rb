@@ -1,5 +1,6 @@
 include_recipe 'rbenv'
 
-cli_gem "berkshelf" do
+cligem "berkshelf" do
+    gem_bins [ 'berks' ]
     version node[:berkshelf][:version]
 end
